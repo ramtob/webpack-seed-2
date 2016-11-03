@@ -1,0 +1,19 @@
+{
+  "name": "webpack-seed",
+  "version": "1.0.0",
+  "description": "webpack seed project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server.cmd --content-base app",
+    "test": "test"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
