@@ -1,7 +1,7 @@
 {
-  "name": "webpack-seed",
+  "name": "check-d3-zoom",
   "version": "1.0.0",
-  "description": "webpack seed project",
+  "description": "check a problem with d3-zoom",
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server.cmd --content-base app",
@@ -13,7 +13,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.25.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "d3-force": "^1.0.3",
+    "d3-zoom": "^1.0.3"
   }
 }
