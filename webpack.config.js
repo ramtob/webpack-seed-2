@@ -13,6 +13,11 @@ module.exports = {
                 loader: 'babel',
                 include: path.resolve('src'),
                 // include: __dirname + '/src',
+            },
+            {
+                test: /\.css/,
+                loaders: ['style', 'css'],
+                include: path.resolve('src')
             }
         ],
     }
