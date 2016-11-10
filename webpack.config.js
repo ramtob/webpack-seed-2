@@ -2,7 +2,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry:  './src',
+    entry: './src',
     output: {
         path: 'build',
         filename: 'bundle.js',
@@ -17,7 +17,7 @@ module.exports = {
             },
             {
                 test: /\.css/,
-                loader: ExtractTextPlugin.extract("css")
+                loader: ExtractTextPlugin.extract('css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'),
                 //loaders: ['style', 'css'],
                 //include: path.resolve('src')
             }
